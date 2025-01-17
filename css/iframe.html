@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    iframe {
+      display: block;
+      margin: 1rem auto;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #333;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Iframe Demo</h1>
+  </header>
+  
+  <main>
+    <section>
+      <h2>Embedded YouTube Video</h2>
+      <p>Below is an embedded YouTube video using an iframe:</p>
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </section>
+    
+    <section>
+      <h2>Embedded External Website</h2>
+      <p>Below is an iframe embedding the <a href="https://example.com" target="_blank">Example</a> website:</p>
+      <iframe 
+        src="https://example.com" 
+        width="600" 
+        height="400" 
+        title="Example Website"
+        style="border: 1px solid #ccc;">
+      </iframe>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Iframe Demo. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced HTML5 Features</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f0f0f5;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    canvas {
+      display: block;
+      margin: 1rem auto;
+      border: 2px solid #4CAF50;
+    }
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Exploring Advanced HTML5 Features</h1>
+  </header>
+
+  <nav>
+    <a href="#multimedia">Multimedia</a>
+    <a href="#semantic">Semantic Elements</a>
+    <a href="#canvas">Canvas Graphics</a>
+  </nav>
+
+  <main>
+    <section id="multimedia">
+      <h2>Multimedia Integration</h2>
+      <p>HTML5 allows seamless integration of audio and video into webpages without requiring plugins. Below are examples of an audio player and a video player:</p>
+      
+      <h3>Audio Player</h3>
+      <audio controls>
+        <source src="audio/sample.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <h3>Video Player</h3>
+      <video controls width="640" height="360">
+        <source src="video/sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="semantic">
+      <h2>Semantic Elements</h2>
+      <p>HTML5 introduces semantic elements that improve the structure and readability of code:</p>
+      <article>
+        <h3>Article Element</h3>
+        <p>The <code>&lt;article&gt;</code> element represents independent content, such as blog posts or news articles.</p>
+      </article>
+      <aside>
+        <h3>Aside Element</h3>
+        <p>The <code>&lt;aside&gt;</code> element represents related content, like sidebars or advertisements.</p>
+      </aside>
+    </section>
+
+    <section id="canvas">
+      <h2>Interactive Canvas Graphics</h2>
+      <p>The HTML5 <code>&lt;canvas&gt;</code> element can be used to create dynamic and interactive graphics with JavaScript. Below is a simple example:</p>
+      <canvas id="myCanvas" width="400" height="200"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Advanced HTML5 Demo. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Drawing on Canvas
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Draw a rectangle
+    ctx.fillStyle = '#4CAF50';
+    ctx.fillRect(50, 50, 100, 50);
+
+    // Draw a circle
+    ctx.beginPath();
+    ctx.arc(250, 100, 40, 0, 2 * Math.PI);
+    ctx.fillStyle = '#ff5722';
+    ctx.fill();
+
+    // Add text
+    ctx.font = '16px Arial';
+    ctx.fillStyle = '#000';
+    ctx.fillText('HTML5 Canvas Demo', 120, 180);
+  </script>
+</body>
+</html>
