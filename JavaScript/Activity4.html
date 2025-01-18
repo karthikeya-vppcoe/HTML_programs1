@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Operators</title>
+</head>
+<body>
+  <h1>JavaScript Operators Demonstration</h1>
+  <script>
+    // ** Arithmetic Operations **
+    let a = 10, b = 3;
+    console.log("Arithmetic Operations:");
+    console.log("Addition (a + b):", a + b);         // Addition
+    console.log("Subtraction (a - b):", a - b);     // Subtraction
+    console.log("Multiplication (a * b):", a * b);  // Multiplication
+    console.log("Division (a / b):", a / b);        // Division
+    console.log("Modulus (a % b):", a % b);         // Modulus
+    console.log("Exponentiation (a ** b):", a ** b); // Exponentiation
+
+    // ** Comparison Operations **
+    console.log("\nComparison Operations:");
+    console.log("Equal to (a == b):", a == b);           // Equal to
+    console.log("Not equal to (a != b):", a != b);       // Not equal to
+    console.log("Strict equal to (a === b):", a === b);  // Strict equal to
+    console.log("Strict not equal to (a !== b):", a !== b); // Strict not equal to
+
+    // ** Logical Operations **
+    let x = true, y = false;
+    console.log("\nLogical Operations:");
+    console.log("AND (x && y):", x && y);               // AND
+    console.log("OR (x || y):", x || y);                // OR
+    console.log("NOT (!x):", !x);                       // NOT
+
+    // ** Assignment Operations **
+    let c = 5;
+    console.log("\nAssignment Operations:");
+    c += 3; // c = c + 3
+    console.log("After c += 3:", c);
+    c -= 2; // c = c - 2
+    console.log("After c -= 2:", c);
+
+    // ** Ternary Operator **
+    console.log("\nTernary Operator:");
+    let age = 20;
+    let isAdult = (age >= 18) ? "Yes, Adult" : "No, Minor";
+    console.log("Is the person an adult?:", isAdult);
+
+    // ** Bitwise Operations **
+    console.log("\nBitwise Operations:");
+    let m = 5;  // 5 in binary is 0101
+    let n = 3;  // 3 in binary is 0011
+    console.log("Bitwise AND (m & n):", m & n); // AND
+    console.log("Bitwise OR (m | n):", m | n);  // OR
+    console.log("Bitwise XOR (m ^ n):", m ^ n); // XOR
+    console.log("Bitwise NOT (~m):", ~m);       // NOT
+    console.log("Left shift (m << 1):", m << 1); // Left shift
+    console.log("Right shift (m >> 1):", m >> 1); // Right shift
+
+    // Display summary on webpage
+    document.write("<h2>Check the console for detailed outputs.</h2>");
+  </script>
+</body>
+</html>

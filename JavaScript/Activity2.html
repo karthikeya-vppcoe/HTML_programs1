@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information Form</title>
+</head>
+<body>
+  <h1>Personal Information Summary</h1>
+  <script>
+    // Declare a variable to store the name (String data type)
+    let name = "John Doe";
+
+    // Declare a variable to store the age (Number data type)
+    let age = 25;
+
+    // Declare a variable to store the favorite color (String data type)
+    let favoriteColor = "Blue";
+
+    // Declare a variable to store a list of favorite hobbies (Array data type)
+    let favoriteHobbies = ["Reading", "Traveling", "Coding", "Photography"];
+
+    // Log all the variables to the console for debugging and verification
+    console.log("Name:", name);
+    console.log("Age:", age);
+    console.log("Favorite Color:", favoriteColor);
+    console.log("Favorite Hobbies:", favoriteHobbies);
+
+    // Display a summary of the information on the webpage
+    document.write("<p><strong>Name:</strong> " + name + "</p>");
+    document.write("<p><strong>Age:</strong> " + age + "</p>");
+    document.write("<p><strong>Favorite Color:</strong> " + favoriteColor + "</p>");
+    document.write("<p><strong>Favorite Hobbies:</strong> " + favoriteHobbies.join(", ") + "</p>");
+  </script>
+</body>
+</html>

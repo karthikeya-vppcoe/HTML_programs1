@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic JavaScript Syntax</title>
+</head>
+<body>
+  <h1>Basic JavaScript Syntax Demonstration</h1>
+  <script>
+    // ** Single-line comment: This is a simple program to demonstrate basic JavaScript syntax **
+
+    /*
+      Multi-line comment:
+      This program includes:
+      1. Variable declarations with different data types.
+      2. Single-line and multi-line comments.
+      3. Methods to output information to the console and document.
+    */
+
+    // Declare variables with different data types
+    let userName = "Alice"; // String
+    let userAge = 30; // Number
+    let isStudent = true; // Boolean
+    let favoriteFoods = ["Pizza", "Burger", "Pasta"]; // Array
+    let address = { city: "New York", country: "USA" }; // Object
+
+    // Output information to the console
+    console.log("User Name:", userName);
+    console.log("User Age:", userAge);
+    console.log("Is the user a student?", isStudent);
+    console.log("Favorite Foods:", favoriteFoods);
+    console.log("Address:", address);
+
+    // Output information to the webpage
+    document.write("<h2>Output:</h2>");
+    document.write("<p><strong>User Name:</strong> " + userName + "</p>");
+    document.write("<p><strong>User Age:</strong> " + userAge + "</p>");
+    document.write("<p><strong>Is the user a student?</strong> " + isStudent + "</p>");
+    document.write("<p><strong>Favorite Foods:</strong> " + favoriteFoods.join(", ") + "</p>");
+    document.write("<p><strong>Address:</strong> " + address.city + ", " + address.country + "</p>");
+  </script>
+</body>
+</html>
