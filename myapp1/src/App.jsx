@@ -1,8 +1,13 @@
-function App() {
-  return (
-    <div>
-     <marquee behavior="" direction="">  Hi all  </marquee>
-     <h2> This is shashank</h2>
+import { useEffect } from "react"
+function App() { 
+  useEffect(()=>{
+    fetch("https://jsonplaceholder.typicode.com/users").then(
+      response=>response.json()
+    ).then(json=>console.log(json))
+   },[])
+    return (
+    <div>     
+     
     </div>
   )
 }
