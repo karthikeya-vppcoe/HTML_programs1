@@ -1,0 +1,22 @@
+[
+  {
+    "Id": 1,
+    "username": "shivam",
+    "userAddress": "mumbai"
+  },
+  {
+    "Id": 2,
+    "username": "karthikeya",
+    "userAddress": "pune"
+  },
+  {
+    "Id": 3,
+    "username": "admin",
+    "userAddress": "nagpur"
+  },
+  {
+    "Id": 4,
+    "username": "user",
+    "userAddress": "nashik"
+  }
+]

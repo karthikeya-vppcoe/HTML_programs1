@@ -1,19 +1,18 @@
-const express=require('express');
-const app=express();
+const express = require('express'); // Import express
+const users= require("./users.json");
+const app = express(); // Create app from express
+const port = 3000; // Set the port
 
-const PORT=5000;
-app.get('/',(req,res)=>{
-    res.send('Hello World');
-});
+app.get("/users", (req, res) => {
+  return res.json(users);
+}); // Create a route for /users
 
-app.get("/getName",(req,res)=>{
-    res.send('Hello World from getName');
-});
+app.get("/users/:Id", (req, res) => {
+    const Id =Number(req.params.Id);
+    const user = users.find(user => user.Id == Id);
+    return res.json(user);
+    }); // Create a route for /users/:id
 
-app.get("/getName/age",(req,res)=>{
-    res.send('Hello World from getAge');
-});
-
-app.listen(PORT,()=>{ // change prompt to PORT
-    console.log(`Server is running on ${PORT}`);
-});
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+}); // Make the app listen on the port
